@@ -5,10 +5,12 @@ Site completo com: página inicial, catálogo com filtros, aba de Réveillon, e 
 ## Como rodar localmente
 
 ```
-node server.js
+node dev-server.js
 ```
 
 Depois acesse `http://localhost:4173`.
+
+**Atenção:** `dev-server.js` é só pra testar localmente. Ele nunca deve ser usado em produção — no Vercel, os arquivos estáticos e as funções em `api/` são servidos diretamente pela plataforma, sem precisar desse arquivo. Não renomeie de volta pra `server.js` (ou qualquer nome que o Vercel reconheça como entrypoint automático), senão o deploy quebra de novo.
 
 ## Sobre os preços atuais
 
