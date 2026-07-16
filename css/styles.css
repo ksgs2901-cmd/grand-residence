@@ -1163,6 +1163,14 @@ body.travar-scroll {
   line-height: 1.5;
 }
 
+.aviso-proximo-passo {
+  margin-top: 14px;
+  background: rgba(143, 224, 173, 0.08);
+  border-color: #8fe0ad;
+  color: var(--cor-texto-suave);
+  text-align: left;
+}
+
 .aviso-restante strong {
   color: var(--cor-destaque);
 }
