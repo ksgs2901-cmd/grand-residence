@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1310960770801497');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1310960770801497&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Utmify UTMs Script -->
+  <script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-xcod-sck
+    data-utmify-prevent-subids
+    async
+    defer
+  ></script>
+  <!-- End Utmify UTMs Script -->
+
+  <!-- Utmify Pixel Code -->
+  <script>
+    window.pixelId = "6a586842eb81dc4d1772d307";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+  <!-- End Utmify Pixel Code -->
+
+  <title>Catálogo de Mansões — Grand Residence</title>
+  <meta name="description" content="Explore nosso catálogo completo de mansões de luxo para temporada, com filtros por cidade, preço e número de hóspedes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header" id="header"></header>
+
+  <section class="pagina-hero">
+    <div class="container">
+      <span class="eyebrow">Coleção completa</span>
+      <h1 class="titulo-secao">Catálogo de Mansões</h1>
+      <p class="breadcrumb"><a href="index.html">Início</a> / Mansões</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="filtros">
+        <div class="campo-filtro">
+          <label for="f-busca">Buscar</label>
+          <input type="text" id="f-busca" placeholder="Nome ou cidade..." />
+        </div>
+        <div class="campo-filtro">
+          <label for="f-cidade">Destino</label>
+          <select id="f-cidade">
+            <option value="">Todos os destinos</option>
+          </select>
+        </div>
+        <div class="campo-filtro">
+          <label for="f-hospedes">Hóspedes (mín.)</label>
+          <select id="f-hospedes">
+            <option value="">Qualquer</option>
+            <option value="6">6+</option>
+            <option value="10">10+</option>
+            <option value="14">14+</option>
+            <option value="18">18+</option>
+          </select>
+        </div>
+        <div class="campo-filtro">
+          <label for="f-preco">Preço máx. /noite</label>
+          <select id="f-preco">
+            <option value="">Qualquer</option>
+            <option value="5000">Até R$ 5.000</option>
+            <option value="7000">Até R$ 7.000</option>
+            <option value="9000">Até R$ 9.000</option>
+            <option value="99999">Até R$ 12.000</option>
+          </select>
+        </div>
+        <div class="campo-filtro">
+          <label for="f-ordenar">Ordenar por</label>
+          <select id="f-ordenar">
+            <option value="destaque">Destaques primeiro</option>
+            <option value="preco-asc">Menor preço</option>
+            <option value="preco-desc">Maior preço</option>
+            <option value="hospedes-desc">Mais hóspedes</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="resultado-info" id="resultado-info"></p>
+      <div class="grid-mansoes" id="grid-catalogo"></div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer"></footer>
+  <a class="whatsapp-flutuante" id="whatsapp-flutuante" href="#"></a>
+
+  <script src="js/comum.js"></script>
+  <script src="js/catalogo.js"></script>
+</body>
+</html>

@@ -1,0 +1,498 @@
+[
+  {
+    "id": 1,
+    "nome": "Melhor mansão frente mar em Guarajuba",
+    "cidade": "Guarajuba - BA",
+    "endereco": "Guarajuba, Guarajuba - BA (endereço completo sob consulta)",
+    "precoNoite": 1250,
+    "quartos": 6,
+    "hospedes": 12,
+    "banheiros": 8,
+    "descricao": "Melhor Mansão frente Mar em Guarajuba Irei lhe apresentar a melhor mansão frente Mar em Guarajuba, uma casa de luxo que apresenta um design moderno e. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Academia",
+      "Aquecimento solar",
+      "Ar condicionado",
+      "Área de serviço",
+      "Armazenagem privada",
+      "Banheira de Hidromassagem",
+      "Câmera",
+      "Churrasqueira"
+    ],
+    "imagens": [
+      "img/hansen/melhor-mansao-frente-mar-em-guarajuba-1.avif",
+      "img/hansen/melhor-mansao-frente-mar-em-guarajuba-2.avif",
+      "img/hansen/melhor-mansao-frente-mar-em-guarajuba-3.avif",
+      "img/hansen/melhor-mansao-frente-mar-em-guarajuba-4.avif",
+      "img/hansen/melhor-mansao-frente-mar-em-guarajuba-5.avif",
+      "img/hansen/melhor-mansao-frente-mar-em-guarajuba-6.avif"
+    ],
+    "destaque": true,
+    "disponivelReveillon": true
+  },
+  {
+    "id": 2,
+    "nome": "Mansão Exclusiva de Luxo à Beira-Mar em Alphaville Guarajuba",
+    "cidade": "Guarajuba - BA",
+    "endereco": "Alphaville Guarajuba, Guarajuba - BA (endereço completo sob consulta)",
+    "precoNoite": 1600,
+    "quartos": 7,
+    "hospedes": 14,
+    "banheiros": 9,
+    "descricao": "Viva a melhor experiência do Litoral Norte baiano em uma Mansão Exclusiva de. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Academia",
+      "Adega",
+      "Ar condicionado",
+      "Área de serviço",
+      "Armazenagem privada",
+      "Churrasqueira",
+      "Closet",
+      "Condomínio"
+    ],
+    "imagens": [
+      "img/hansen/mansao-exclusiva-de-luxo-a-beira-mar-em-alphaville-guarajuba-1.jpg",
+      "img/hansen/mansao-exclusiva-de-luxo-a-beira-mar-em-alphaville-guarajuba-2.jpg",
+      "img/hansen/mansao-exclusiva-de-luxo-a-beira-mar-em-alphaville-guarajuba-3.jpg",
+      "img/hansen/mansao-exclusiva-de-luxo-a-beira-mar-em-alphaville-guarajuba-4.jpg",
+      "img/hansen/mansao-exclusiva-de-luxo-a-beira-mar-em-alphaville-guarajuba-5.jpg",
+      "img/hansen/mansao-exclusiva-de-luxo-a-beira-mar-em-alphaville-guarajuba-6.jpg"
+    ],
+    "destaque": true,
+    "disponivelReveillon": true
+  },
+  {
+    "id": 3,
+    "nome": "Excelente mansão à venda perto da praia em Guarajuba",
+    "cidade": "Guarajuba - BA",
+    "endereco": "Guarajuba, Guarajuba - BA (endereço completo sob consulta)",
+    "precoNoite": 1600,
+    "quartos": 7,
+    "hospedes": 14,
+    "banheiros": 9,
+    "descricao": "Essa excelente mansão à venda perto da praia em Guarajuba oferece um design luxuoso e sofisticado em. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Ar condicionado",
+      "Área de serviço",
+      "Churrasqueira",
+      "Closet",
+      "Condomínio",
+      "Copa-cozinha",
+      "Deck da piscina",
+      "Despensa"
+    ],
+    "imagens": [
+      "img/hansen/excelente-mansao-a-venda-perto-da-praia-em-guarajuba-1.jpg",
+      "img/hansen/excelente-mansao-a-venda-perto-da-praia-em-guarajuba-2.jpg",
+      "img/hansen/excelente-mansao-a-venda-perto-da-praia-em-guarajuba-3.jpg",
+      "img/hansen/excelente-mansao-a-venda-perto-da-praia-em-guarajuba-4.jpg",
+      "img/hansen/excelente-mansao-a-venda-perto-da-praia-em-guarajuba-5.jpg",
+      "img/hansen/excelente-mansao-a-venda-perto-da-praia-em-guarajuba-6.jpg"
+    ],
+    "destaque": true,
+    "disponivelReveillon": true
+  },
+  {
+    "id": 4,
+    "nome": "Mansão para aluguel à 70 m do mar na Praia do Forte",
+    "cidade": "Praia do Forte - BA",
+    "endereco": "Praia do Forte, Praia do Forte - BA (endereço completo sob consulta)",
+    "precoNoite": 1250,
+    "quartos": 6,
+    "hospedes": 12,
+    "banheiros": 8,
+    "descricao": "Mansão para aluguel à 70 m do mar na Praia do Forte. Te convido a viver uma experiência incrível se. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Academia",
+      "Adega",
+      "Ar condicionado",
+      "Área de serviço",
+      "Armazenagem privada",
+      "Câmera",
+      "Churrasqueira",
+      "Closet"
+    ],
+    "imagens": [
+      "img/hansen/mansao-para-aluguel-a-70-m-do-mar-na-praia-do-forte-1.jpg",
+      "img/hansen/mansao-para-aluguel-a-70-m-do-mar-na-praia-do-forte-2.jpg",
+      "img/hansen/mansao-para-aluguel-a-70-m-do-mar-na-praia-do-forte-3.jpg",
+      "img/hansen/mansao-para-aluguel-a-70-m-do-mar-na-praia-do-forte-4.jpg",
+      "img/hansen/mansao-para-aluguel-a-70-m-do-mar-na-praia-do-forte-5.jpg",
+      "img/hansen/mansao-para-aluguel-a-70-m-do-mar-na-praia-do-forte-6.jpg"
+    ],
+    "destaque": true,
+    "disponivelReveillon": true
+  },
+  {
+    "id": 5,
+    "nome": "Mansão elegante perto do mar a venda na Praia do Forte",
+    "cidade": "Praia do Forte - BA",
+    "endereco": "Praia do Forte, Praia do Forte - BA (endereço completo sob consulta)",
+    "precoNoite": 950,
+    "quartos": 5,
+    "hospedes": 10,
+    "banheiros": 6,
+    "descricao": "Essa mansão elegante perto do mar a venda na Praia do Forte com novo conceito de explorar a. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Academia",
+      "Adega",
+      "Ar condicionado",
+      "Área de serviço",
+      "Armazenagem privada",
+      "Churrasqueira",
+      "Closet",
+      "Condomínio"
+    ],
+    "imagens": [
+      "img/hansen/mansao-elegante-perto-do-mar-a-venda-na-praia-do-forte-1.jpg",
+      "img/hansen/mansao-elegante-perto-do-mar-a-venda-na-praia-do-forte-2.jpg",
+      "img/hansen/mansao-elegante-perto-do-mar-a-venda-na-praia-do-forte-3.jpg",
+      "img/hansen/mansao-elegante-perto-do-mar-a-venda-na-praia-do-forte-4.jpg",
+      "img/hansen/mansao-elegante-perto-do-mar-a-venda-na-praia-do-forte-5.jpg",
+      "img/hansen/mansao-elegante-perto-do-mar-a-venda-na-praia-do-forte-6.jpg"
+    ],
+    "destaque": true,
+    "disponivelReveillon": true
+  },
+  {
+    "id": 6,
+    "nome": "Mansão de alto luxo frente mar na Praia do Forte",
+    "cidade": "Praia do Forte - BA",
+    "endereco": "Praia do Forte, Praia do Forte - BA (endereço completo sob consulta)",
+    "precoNoite": 2000,
+    "quartos": 8,
+    "hospedes": 16,
+    "banheiros": 9,
+    "descricao": "Essa mansão de alto luxo frente mar na Praia do Forte irá lhe proporcionar uma experiência. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Adega",
+      "Aquecimento solar",
+      "Ar condicionado",
+      "Área de serviço",
+      "Armazenagem privada",
+      "Câmera",
+      "Central de gás",
+      "Churrasqueira"
+    ],
+    "imagens": [
+      "img/hansen/mansao-de-alto-luxo-frente-mar-na-praia-do-forte-1.jpg",
+      "img/hansen/mansao-de-alto-luxo-frente-mar-na-praia-do-forte-2.jpg",
+      "img/hansen/mansao-de-alto-luxo-frente-mar-na-praia-do-forte-3.jpg",
+      "img/hansen/mansao-de-alto-luxo-frente-mar-na-praia-do-forte-4.jpg",
+      "img/hansen/mansao-de-alto-luxo-frente-mar-na-praia-do-forte-5.jpg",
+      "img/hansen/mansao-de-alto-luxo-frente-mar-na-praia-do-forte-6.jpg"
+    ],
+    "destaque": true,
+    "disponivelReveillon": true
+  },
+  {
+    "id": 7,
+    "nome": "Casa nova perto da praia a venda no Iberostar",
+    "cidade": "Praia do Forte - BA",
+    "endereco": "Iberostar, Praia do Forte - BA (endereço completo sob consulta)",
+    "precoNoite": 950,
+    "quartos": 5,
+    "hospedes": 10,
+    "banheiros": 6,
+    "descricao": "Casa nova perto da praia a venda no Iberostar. Essa maravilha de casa está localizada dentro do complexo. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Área de serviço",
+      "Churrasqueira",
+      "Closet",
+      "Condomínio",
+      "Copa-cozinha",
+      "Deck da piscina",
+      "Dependência de empregada",
+      "Depósito"
+    ],
+    "imagens": [
+      "img/hansen/casa-nova-perto-da-praia-a-venda-no-iberostar-1.jpg",
+      "img/hansen/casa-nova-perto-da-praia-a-venda-no-iberostar-2.jpg",
+      "img/hansen/casa-nova-perto-da-praia-a-venda-no-iberostar-3.jpg",
+      "img/hansen/casa-nova-perto-da-praia-a-venda-no-iberostar-4.jpg",
+      "img/hansen/casa-nova-perto-da-praia-a-venda-no-iberostar-5.jpg",
+      "img/hansen/casa-nova-perto-da-praia-a-venda-no-iberostar-6.jpg"
+    ],
+    "destaque": false,
+    "disponivelReveillon": true
+  },
+  {
+    "id": 8,
+    "nome": "Casa de luxo a 80 m da praia a venda Guarajuba",
+    "cidade": "Guarajuba - BA",
+    "endereco": "Guarajuba, Guarajuba - BA (endereço completo sob consulta)",
+    "precoNoite": 2000,
+    "quartos": 8,
+    "hospedes": 16,
+    "banheiros": 9,
+    "descricao": "Casa de luxo a 80 m da praia a venda Guarajuba. Localização privilegiada dessa casa pois está só a 80. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Adega",
+      "Ar condicionado",
+      "Área de serviço",
+      "Armazenagem privada",
+      "Churrasqueira",
+      "Closet",
+      "Condomínio",
+      "Cozinha"
+    ],
+    "imagens": [
+      "img/hansen/casa-de-luxo-a-80-m-da-praia-a-venda-guarajuba-1.jpg",
+      "img/hansen/casa-de-luxo-a-80-m-da-praia-a-venda-guarajuba-2.jpg",
+      "img/hansen/casa-de-luxo-a-80-m-da-praia-a-venda-guarajuba-3.jpg",
+      "img/hansen/casa-de-luxo-a-80-m-da-praia-a-venda-guarajuba-4.jpg",
+      "img/hansen/casa-de-luxo-a-80-m-da-praia-a-venda-guarajuba-5.jpg",
+      "img/hansen/casa-de-luxo-a-80-m-da-praia-a-venda-guarajuba-6.jpg"
+    ],
+    "destaque": false,
+    "disponivelReveillon": true
+  },
+  {
+    "id": 9,
+    "nome": "Casa Iberostate a venda Praia do Forte",
+    "cidade": "Praia do Forte - BA",
+    "endereco": "Praia do Forte, Praia do Forte - BA (endereço completo sob consulta)",
+    "precoNoite": 950,
+    "quartos": 5,
+    "hospedes": 10,
+    "banheiros": 6,
+    "descricao": "Casa Iberostate a venda Praia do Forte. Ao adquirir esse imóvel, terá a sua disposição vários benefícios e. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Churrasqueira",
+      "Closet",
+      "Condomínio",
+      "Copa-cozinha",
+      "Deck da piscina",
+      "Dependência de empregada",
+      "Depósito",
+      "Espaço gourmet"
+    ],
+    "imagens": [
+      "img/hansen/casa-iberostate-a-venda-praia-do-forte-1.jpg",
+      "img/hansen/casa-iberostate-a-venda-praia-do-forte-2.jpg",
+      "img/hansen/casa-iberostate-a-venda-praia-do-forte-3.jpg",
+      "img/hansen/casa-iberostate-a-venda-praia-do-forte-4.jpg",
+      "img/hansen/casa-iberostate-a-venda-praia-do-forte-5.jpg",
+      "img/hansen/casa-iberostate-a-venda-praia-do-forte-6.jpg"
+    ],
+    "destaque": false,
+    "disponivelReveillon": true
+  },
+  {
+    "id": 10,
+    "nome": "Casa nova a venda no Iberostar Praia do Forte",
+    "cidade": "Praia do Forte - BA",
+    "endereco": "Iberostar, Praia do Forte - BA (endereço completo sob consulta)",
+    "precoNoite": 950,
+    "quartos": 5,
+    "hospedes": 10,
+    "banheiros": 6,
+    "descricao": "Casa nova a venda no Iberostar Praia do Forte. Venha desfrutar com toda família desse condomínio completo,. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Área de serviço",
+      "Churrasqueira",
+      "Closet",
+      "Condomínio",
+      "Copa-cozinha",
+      "Deck da piscina",
+      "Jardim",
+      "Jardim em frente"
+    ],
+    "imagens": [
+      "img/hansen/casa-nova-a-venda-no-iberostar-praia-do-forte-1.jpg",
+      "img/hansen/casa-nova-a-venda-no-iberostar-praia-do-forte-2.jpg",
+      "img/hansen/casa-nova-a-venda-no-iberostar-praia-do-forte-3.jpg",
+      "img/hansen/casa-nova-a-venda-no-iberostar-praia-do-forte-4.jpg",
+      "img/hansen/casa-nova-a-venda-no-iberostar-praia-do-forte-5.jpg",
+      "img/hansen/casa-nova-a-venda-no-iberostar-praia-do-forte-6.jpg"
+    ],
+    "destaque": false,
+    "disponivelReveillon": true
+  },
+  {
+    "id": 11,
+    "nome": "Mansão exclusiva à venda na Praia do Forte",
+    "cidade": "Praia do Forte - BA",
+    "endereco": "Praia do Forte, Praia do Forte - BA (endereço completo sob consulta)",
+    "precoNoite": 1250,
+    "quartos": 6,
+    "hospedes": 12,
+    "banheiros": 8,
+    "descricao": "Mansão exclusiva à venda na Praia do Forte. Lhe apresento essa exclusiva Mansão com acabamento luxuoso e. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Academia",
+      "Ar condicionado",
+      "Área de serviço",
+      "Churrasqueira",
+      "Closet",
+      "Condomínio",
+      "Cozinha americana",
+      "Deck da piscina"
+    ],
+    "imagens": [
+      "img/hansen/mansao-exclusiva-a-venda-na-praia-do-forte-1.jpg",
+      "img/hansen/mansao-exclusiva-a-venda-na-praia-do-forte-2.jpg",
+      "img/hansen/mansao-exclusiva-a-venda-na-praia-do-forte-3.jpg",
+      "img/hansen/mansao-exclusiva-a-venda-na-praia-do-forte-4.jpg",
+      "img/hansen/mansao-exclusiva-a-venda-na-praia-do-forte-5.jpg",
+      "img/hansen/mansao-exclusiva-a-venda-na-praia-do-forte-6.jpg"
+    ],
+    "destaque": false,
+    "disponivelReveillon": true
+  },
+  {
+    "id": 12,
+    "nome": "Mansão moderna a venda Praia do Forte",
+    "cidade": "Praia do Forte - BA",
+    "endereco": "Praia do Forte, Praia do Forte - BA (endereço completo sob consulta)",
+    "precoNoite": 1600,
+    "quartos": 7,
+    "hospedes": 14,
+    "banheiros": 9,
+    "descricao": "Mansão moderna a venda Praia do Forte. Essa mansão tem detalhes surpreendentes para proporcionar conforto, bem estar. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Academia",
+      "Ar condicionado",
+      "Área de serviço",
+      "Armazenagem privada",
+      "Churrasqueira",
+      "Closet",
+      "Condomínio",
+      "Copa-cozinha"
+    ],
+    "imagens": [
+      "img/hansen/mansao-moderna-a-venda-praia-do-forte-1.jpg",
+      "img/hansen/mansao-moderna-a-venda-praia-do-forte-2.jpg",
+      "img/hansen/mansao-moderna-a-venda-praia-do-forte-3.jpg",
+      "img/hansen/mansao-moderna-a-venda-praia-do-forte-4.jpg",
+      "img/hansen/mansao-moderna-a-venda-praia-do-forte-5.jpg",
+      "img/hansen/mansao-moderna-a-venda-praia-do-forte-6.jpg"
+    ],
+    "destaque": false,
+    "disponivelReveillon": true
+  },
+  {
+    "id": 13,
+    "nome": "Mansão de Luxo à Beira-Mar para aluguel em Alphaville Guarajuba",
+    "cidade": "Guarajuba - BA",
+    "endereco": "Alphaville Guarajuba, Guarajuba - BA (endereço completo sob consulta)",
+    "precoNoite": 1600,
+    "quartos": 7,
+    "hospedes": 14,
+    "banheiros": 10,
+    "descricao": "Viva a melhor experiência em passar ferias com toda familia e amigos no litoral norte. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Academia",
+      "Adega",
+      "Ar condicionado",
+      "Área de serviço",
+      "Armazenagem privada",
+      "Bar",
+      "Churrasqueira",
+      "Closet"
+    ],
+    "imagens": [
+      "img/hansen/mansao-de-luxo-a-beira-mar-para-aluguel-em-alphaville-guarajuba-1.jpg",
+      "img/hansen/mansao-de-luxo-a-beira-mar-para-aluguel-em-alphaville-guarajuba-2.jpg",
+      "img/hansen/mansao-de-luxo-a-beira-mar-para-aluguel-em-alphaville-guarajuba-3.jpg",
+      "img/hansen/mansao-de-luxo-a-beira-mar-para-aluguel-em-alphaville-guarajuba-4.jpg",
+      "img/hansen/mansao-de-luxo-a-beira-mar-para-aluguel-em-alphaville-guarajuba-5.jpg",
+      "img/hansen/mansao-de-luxo-a-beira-mar-para-aluguel-em-alphaville-guarajuba-6.jpg"
+    ],
+    "destaque": false,
+    "disponivelReveillon": true
+  },
+  {
+    "id": 14,
+    "nome": "Casa de luxo elegante para aluguel em Guarajuba",
+    "cidade": "Guarajuba - BA",
+    "endereco": "Guarajuba, Guarajuba - BA (endereço completo sob consulta)",
+    "precoNoite": 950,
+    "quartos": 5,
+    "hospedes": 10,
+    "banheiros": 6,
+    "descricao": "Casa de luxo elegante para aluguel em Guarajuba. Construída com os mais altos padrões de qualidade e. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Aquecimento solar",
+      "Ar condicionado",
+      "Área de serviço",
+      "Câmera",
+      "Churrasqueira",
+      "Closet",
+      "Condomínio",
+      "Cozinha americana"
+    ],
+    "imagens": [
+      "img/hansen/casa-de-luxo-elegante-para-aluguel-em-guarajuba-1.jpg",
+      "img/hansen/casa-de-luxo-elegante-para-aluguel-em-guarajuba-2.jpg",
+      "img/hansen/casa-de-luxo-elegante-para-aluguel-em-guarajuba-3.jpg",
+      "img/hansen/casa-de-luxo-elegante-para-aluguel-em-guarajuba-4.jpg",
+      "img/hansen/casa-de-luxo-elegante-para-aluguel-em-guarajuba-5.jpg",
+      "img/hansen/casa-de-luxo-elegante-para-aluguel-em-guarajuba-6.jpg"
+    ],
+    "destaque": false,
+    "disponivelReveillon": true
+  },
+  {
+    "id": 15,
+    "nome": "Mansão luxuosa no condomínio piscinas naturais na Praia do Forte",
+    "cidade": "Praia do Forte - BA",
+    "endereco": "Praia do Forte, Praia do Forte - BA (endereço completo sob consulta)",
+    "precoNoite": 950,
+    "quartos": 5,
+    "hospedes": 10,
+    "banheiros": 7,
+    "descricao": "Essa maravilhosa mansão luxuosa no condomínio piscinas naturais na Praia do Forte tem. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Adega",
+      "Ar condicionado",
+      "Área de serviço",
+      "Armazenagem privada",
+      "Câmera",
+      "Central de gás",
+      "Churrasqueira",
+      "Closet"
+    ],
+    "imagens": [
+      "img/hansen/mansao-luxuosa-no-condominio-piscinas-naturais-na-praia-do-forte-1.jpg",
+      "img/hansen/mansao-luxuosa-no-condominio-piscinas-naturais-na-praia-do-forte-2.jpg",
+      "img/hansen/mansao-luxuosa-no-condominio-piscinas-naturais-na-praia-do-forte-3.jpg",
+      "img/hansen/mansao-luxuosa-no-condominio-piscinas-naturais-na-praia-do-forte-4.jpg",
+      "img/hansen/mansao-luxuosa-no-condominio-piscinas-naturais-na-praia-do-forte-5.jpg",
+      "img/hansen/mansao-luxuosa-no-condominio-piscinas-naturais-na-praia-do-forte-6.jpg"
+    ],
+    "destaque": false,
+    "disponivelReveillon": true
+  },
+  {
+    "id": 16,
+    "nome": "Mansão nova a 400 m do mar para aluguel na Praia do Forte",
+    "cidade": "Praia do Forte - BA",
+    "endereco": "Praia do Forte, Praia do Forte - BA (endereço completo sob consulta)",
+    "precoNoite": 950,
+    "quartos": 5,
+    "hospedes": 10,
+    "banheiros": 6,
+    "descricao": "O projeto dessa mansão nova a 400 m do mar para aluguel na Praia do Forte foi pensando em cada. Imóvel administrado pela Hansen Imóveis, especializada em alto padrão no litoral norte da Bahia.",
+    "comodidades": [
+      "Academia",
+      "Adega",
+      "Ar condicionado",
+      "Área de serviço",
+      "Câmera",
+      "Churrasqueira",
+      "Closet",
+      "Condomínio"
+    ],
+    "imagens": [
+      "img/hansen/mansao-nova-a-400-m-do-mar-para-aluguel-na-praia-do-forte-1.jpg",
+      "img/hansen/mansao-nova-a-400-m-do-mar-para-aluguel-na-praia-do-forte-2.jpg",
+      "img/hansen/mansao-nova-a-400-m-do-mar-para-aluguel-na-praia-do-forte-3.jpg",
+      "img/hansen/mansao-nova-a-400-m-do-mar-para-aluguel-na-praia-do-forte-4.jpg",
+      "img/hansen/mansao-nova-a-400-m-do-mar-para-aluguel-na-praia-do-forte-5.jpg",
+      "img/hansen/mansao-nova-a-400-m-do-mar-para-aluguel-na-praia-do-forte-6.jpg"
+    ],
+    "destaque": false,
+    "disponivelReveillon": true
+  }
+]

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1310960770801497');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1310960770801497&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Utmify UTMs Script -->
+  <script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-xcod-sck
+    data-utmify-prevent-subids
+    async
+    defer
+  ></script>
+  <!-- End Utmify UTMs Script -->
+
+  <!-- Utmify Pixel Code -->
+  <script>
+    window.pixelId = "6a586842eb81dc4d1772d307";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+  <!-- End Utmify Pixel Code -->
+
+  <title id="titulo-pagina">Mansão — Grand Residence</title>
+  <meta name="description" content="Detalhes, comodidades e formulário de reserva de mansão de luxo para temporada." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="tem-sticky-cta">
+  <header class="header" id="header"></header>
+
+  <section class="pagina-hero" style="padding-bottom: 40px;">
+    <div class="container">
+      <span class="eyebrow" id="imovel-cidade">Destino</span>
+      <h1 class="titulo-secao" id="imovel-nome">Carregando...</h1>
+      <p class="breadcrumb"><a href="index.html">Início</a> / <a href="catalogo.html">Mansões</a> / <span id="imovel-breadcrumb"></span></p>
+    </div>
+  </section>
+
+  <section style="padding-top: 40px;">
+    <div class="container">
+      <div class="galeria" id="galeria"></div>
+
+      <div class="detalhe-layout">
+        <div class="detalhe-info">
+          <div class="cidade-tag" id="detalhe-cidade"></div>
+          <h1 id="detalhe-nome"></h1>
+
+          <div class="specs-detalhe">
+            <div><strong id="detalhe-quartos"></strong><span>Suítes</span></div>
+            <div><strong id="detalhe-hospedes"></strong><span>Hóspedes</span></div>
+            <div><strong id="detalhe-banheiros"></strong><span>Banheiros</span></div>
+          </div>
+
+          <h2>Sobre a propriedade</h2>
+          <p class="descricao" id="detalhe-descricao"></p>
+          <p class="descricao" style="margin-top: 14px; font-size: 0.85rem;" id="detalhe-endereco"></p>
+
+          <h2>Comodidades</h2>
+          <ul class="lista-comodidades" id="detalhe-comodidades"></ul>
+        </div>
+
+        <aside class="card-reserva">
+          <div class="reserva-passos" id="reserva-passos">
+            <span class="passo ativo" data-passo="1">1. Datas</span>
+            <span class="passo" data-passo="2">2. Seus dados</span>
+            <span class="passo" data-passo="3">3. Confirmação</span>
+            <span class="passo" data-passo="4">4. Pagamento</span>
+          </div>
+
+          <div class="reserva-passos-mobile" id="reserva-passos-mobile">
+            <span id="passo-mobile-texto">Etapa 1 de 4 · Datas</span>
+            <div class="progresso-mobile" id="progresso-mobile">
+              <span data-passo="1"></span>
+              <span data-passo="2"></span>
+              <span data-passo="3"></span>
+              <span data-passo="4"></span>
+            </div>
+          </div>
+
+          <div class="preco-noite" id="detalhe-preco"></div>
+          <span style="font-size: 0.8rem; color: var(--cor-texto-fraca);">valor de referência por noite</span>
+
+          <form id="form-reserva" novalidate>
+
+            <div class="etapa-reserva" id="etapa-1">
+              <div class="linha-dupla">
+                <div class="campo-filtro pequeno">
+                  <label for="r-checkin">Check-in</label>
+                  <input type="date" id="r-checkin" required />
+                </div>
+                <div class="campo-filtro pequeno">
+                  <label for="r-checkout">Check-out</label>
+                  <input type="date" id="r-checkout" required />
+                </div>
+              </div>
+              <div class="campo-filtro pequeno">
+                <label for="r-hospedes">Número de hóspedes</label>
+                <input type="number" id="r-hospedes" min="1" value="2" required />
+              </div>
+              <p class="erro-reserva" id="erro-datas"></p>
+
+              <div class="resumo-preco" id="resumo-preco" hidden></div>
+
+              <button type="button" class="btn btn-primario btn-bloco" id="btn-ir-etapa-2">Continuar</button>
+            </div>
+
+            <div class="etapa-reserva" id="etapa-2" hidden>
+              <div class="resumo-preco" id="resumo-preco-2"></div>
+              <div class="campo-filtro pequeno">
+                <label for="r-nome">Nome completo</label>
+                <input type="text" id="r-nome" placeholder="Seu nome completo" required />
+              </div>
+              <div class="campo-filtro pequeno">
+                <label for="r-email">E-mail</label>
+                <input type="email" id="r-email" placeholder="voce@email.com" required />
+              </div>
+              <div class="campo-filtro pequeno">
+                <label for="r-telefone">Telefone</label>
+                <input type="tel" id="r-telefone" placeholder="(00) 00000-0000" required />
+              </div>
+              <div class="campo-filtro pequeno">
+                <label for="r-cpf">CPF</label>
+                <input type="text" id="r-cpf" placeholder="000.000.000-00" inputmode="numeric" maxlength="14" required />
+              </div>
+              <div class="linha-dupla">
+                <button type="button" class="btn btn-secundario btn-bloco" id="btn-voltar-etapa-1">Voltar</button>
+                <button type="button" class="btn btn-primario btn-bloco" id="btn-ir-etapa-3">Continuar</button>
+              </div>
+            </div>
+
+            <div class="etapa-reserva" id="etapa-3" hidden>
+              <div class="revisao-reserva">
+                <h3>Confirme os dados da sua reserva</h3>
+
+                <div class="revisao-linha">
+                  <span>Mansão</span>
+                  <strong id="revisao-mansao"></strong>
+                </div>
+                <div class="revisao-linha">
+                  <span>Check-in</span>
+                  <strong id="revisao-checkin"></strong>
+                </div>
+                <div class="revisao-linha">
+                  <span>Check-out</span>
+                  <strong id="revisao-checkout"></strong>
+                </div>
+                <div class="revisao-linha">
+                  <span>Hóspedes</span>
+                  <strong id="revisao-hospedes"></strong>
+                </div>
+                <div class="revisao-linha">
+                  <span>Reserva em nome de</span>
+                  <strong id="revisao-nome"></strong>
+                </div>
+
+                <div class="resumo-preco" id="resumo-preco-3"></div>
+
+                <div class="aviso-restante" id="aviso-restante"></div>
+              </div>
+
+              <button type="button" class="btn btn-primario btn-bloco" id="btn-ir-etapa-4">Confirmar e pagar com Pix</button>
+              <button type="button" class="btn btn-secundario btn-bloco" id="btn-voltar-etapa-2">Voltar</button>
+            </div>
+
+            <div class="etapa-reserva" id="etapa-4" hidden>
+              <div class="resumo-preco" id="resumo-preco-4"></div>
+
+              <div id="campos-pix">
+                <div class="pix-caixa">
+                  <p class="pix-carregando" id="pix-carregando">Gerando cobrança Pix...</p>
+                  <img class="pix-qr" id="pix-qr-img" aria-hidden="true" hidden />
+                  <p class="pix-instrucao" id="pix-instrucao" hidden>Escaneie o QR Code com o app do seu banco ou copie o código Pix abaixo.</p>
+                  <div class="pix-codigo" id="pix-codigo-caixa" hidden>
+                    <span id="pix-codigo-texto"></span>
+                    <button type="button" class="btn btn-secundario" id="btn-copiar-pix">Copiar</button>
+                  </div>
+                  <p class="pix-status" id="pix-status-texto"></p>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-secundario btn-bloco" id="btn-voltar-etapa-3">Voltar</button>
+            </div>
+
+            <div class="etapa-reserva" id="etapa-confirmacao" hidden>
+              <div class="confirmacao">
+                <span class="confirmacao-icone">&#10003;</span>
+                <h3>Reserva confirmada!</h3>
+                <p class="confirmacao-codigo" id="confirmacao-codigo"></p>
+                <div class="resumo-preco" id="resumo-preco-final"></div>
+                <p class="confirmacao-detalhe" id="confirmacao-metodo"></p>
+                <p class="confirmacao-detalhe" id="confirmacao-restante-info"></p>
+                <p class="confirmacao-detalhe">Enviamos os detalhes para <strong id="confirmacao-email"></strong>.</p>
+                <button type="button" class="btn btn-secundario btn-bloco" id="btn-nova-reserva">Fazer outra reserva</button>
+              </div>
+            </div>
+
+          </form>
+          <p class="aviso">Pagamento via Pix, com confirmação automática e instantânea. Você paga apenas a taxa de reserva agora — o restante só é cobrado até a data do check-in.</p>
+        </aside>
+      </div>
+
+      <div class="mansoes-relacionadas">
+        <div class="cabecalho-secao">
+          <div>
+            <span class="eyebrow">Você também pode gostar</span>
+            <h2 class="titulo-secao">Outras mansões no mesmo destino</h2>
+          </div>
+        </div>
+        <div class="grid-mansoes" id="grid-relacionadas"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer"></footer>
+  <a class="whatsapp-flutuante" id="whatsapp-flutuante" href="#"></a>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-fechar" id="lightbox-fechar">&times;</button>
+    <img id="lightbox-img" src="" alt="" />
+    <div class="lightbox-nav">
+      <button id="lightbox-anterior">&larr; Anterior</button>
+      <button id="lightbox-proxima">Próxima &rarr;</button>
+    </div>
+  </div>
+
+  <div class="sticky-cta-mobile" id="sticky-cta">
+    <div class="sticky-cta-preco">
+      <strong id="sticky-cta-valor"></strong>
+      <span>/noite</span>
+    </div>
+    <button type="button" class="btn btn-primario" id="sticky-cta-btn">Reservar Agora</button>
+  </div>
+
+  <script src="js/comum.js"></script>
+  <script src="js/imovel.js"></script>
+</body>
+</html>
