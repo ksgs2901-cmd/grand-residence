@@ -43,8 +43,8 @@
   </script>
   <!-- End Utmify Pixel Code -->
 
-  <title>Mansão à Beira-Mar — Sinal a partir de R$500 — Grand Residence</title>
-  <meta name="description" content="Mansão de luxo à beira-mar, 8 suítes, piscina privativa e área gourmet. Reserve com Pix a partir de R$500 de sinal — o menor valor do Brasil." />
+  <title>Mansões em Promoção — Sinal a partir de R$500 — Grand Residence</title>
+  <meta name="description" content="Mansões de luxo selecionadas, com sinal a partir de R$500 via Pix — o menor valor do Brasil. Reserve 100% online." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -56,16 +56,15 @@
   <section class="hero" id="hero-oferta">
     <div class="container hero-conteudo">
       <span class="eyebrow">🎉 O menor valor do Brasil · Vagas limitadas</span>
-      <h1>Mansão à beira-mar por <em>R$500 de sinal</em></h1>
-      <p>8 suítes, piscina privativa e área gourmet em Praia do Forte, litoral norte da Bahia. Reserve agora com Pix — o restante só vence no check-in.</p>
+      <h1>Mansões selecionadas por <em>R$500 de sinal</em></h1>
+      <p>Casas de alto padrão à beira-mar, com piscina e área gourmet. Reserve agora com Pix — o restante só vence no check-in.</p>
+      <ul class="lista-check">
+        <li>✔ Casas de alto padrão</li>
+        <li>✔ Atendimento via WhatsApp</li>
+        <li>✔ Datas limitadas</li>
+      </ul>
       <div class="hero-acoes">
-        <a href="#reserva-oferta" class="btn btn-primario">Reservar Agora — R$500</a>
-      </div>
-      <div class="hero-stats">
-        <div><strong>8</strong><span>Suítes</span></div>
-        <div><strong id="oferta-hospedes">16</strong><span>Hóspedes</span></div>
-        <div><strong>R$500</strong><span>Sinal via Pix</span></div>
-        <div><strong>100%</strong><span>Reserva online</span></div>
+        <a href="#mansoes-oferta" class="btn btn-primario">Reservar Agora — R$500</a>
       </div>
     </div>
   </section>
@@ -88,7 +87,7 @@
       <div class="passos-grid">
         <div class="passo-explicativo">
           <span class="passo-numero">1</span>
-          <h3>Escolha as datas</h3>
+          <h3>Escolha a mansão e as datas</h3>
           <p>Veja fotos, comodidades e escolha check-in e check-out direto no site — sem precisar ligar pra ninguém.</p>
         </div>
         <div class="passo-explicativo">
@@ -105,7 +104,20 @@
     </div>
   </section>
 
-  <section class="secao-alt" style="padding-top: 40px;">
+  <section class="secao-alt" id="mansoes-oferta">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <div>
+          <span class="eyebrow">Mansões em promoção</span>
+          <h2 class="titulo-secao">Todas com sinal a partir de R$500</h2>
+        </div>
+      </div>
+      <p class="resultado-info" id="resultado-info"></p>
+      <div class="grid-mansoes" id="grid-oferta"></div>
+    </div>
+  </section>
+
+  <section id="area-reserva" hidden>
     <div class="container">
       <div class="galeria" id="galeria"></div>
 
@@ -128,7 +140,7 @@
           <ul class="lista-comodidades" id="detalhe-comodidades"></ul>
         </div>
 
-        <aside class="card-reserva" id="reserva-oferta">
+        <aside class="card-reserva">
           <div class="reserva-passos" id="reserva-passos">
             <span class="passo ativo" data-passo="1">1. Datas</span>
             <span class="passo" data-passo="2">2. Seus dados</span>
@@ -266,76 +278,73 @@
 
           </form>
           <p class="aviso">Pagamento via Pix, com confirmação automática e instantânea. Você paga apenas a taxa de reserva agora — o restante só é cobrado até a data do check-in.</p>
-
-          <div class="selos-seguranca">
-            <div class="selo"><span class="selo-icone">🔒</span><span>Pagamento 100% seguro</span></div>
-            <div class="selo"><span class="selo-icone">🔐</span><span>Conexão criptografada (SSL)</span></div>
-            <div class="selo"><span class="selo-icone">⚡</span><span>Confirmação automática via Pix</span></div>
-            <div class="selo"><span class="selo-icone">↩️</span><span>Reembolso garantido se a data não for confirmada</span></div>
-          </div>
         </aside>
       </div>
+    </div>
+  </section>
 
-      <section class="oferta-depoimentos">
-        <div class="cabecalho-secao">
-          <div>
-            <span class="eyebrow">Quem já viveu a experiência</span>
-            <h2 class="titulo-secao">Palavras de nossos hóspedes</h2>
-          </div>
+  <section class="oferta-depoimentos">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <div>
+          <span class="eyebrow">Quem já viveu a experiência</span>
+          <h2 class="titulo-secao">Palavras de nossos hóspedes</h2>
         </div>
-        <div class="depoimentos-grid">
-          <div class="depoimento">
-            <div class="estrelas">★★★★★</div>
-            <p>"Uma temporada inesquecível. Cada detalhe da mansão era impecável, e o concierge resolveu tudo antes mesmo de pedirmos."</p>
-            <div class="autor">— Fernanda R., São Paulo</div>
-          </div>
-          <div class="depoimento">
-            <div class="estrelas">★★★★★</div>
-            <p>"Já alugamos casas de luxo em vários países, e essa curadoria está entre as melhores experiências que já tivemos."</p>
-            <div class="autor">— Marcelo A., Belo Horizonte</div>
-          </div>
-          <div class="depoimento">
-            <div class="estrelas">★★★★★</div>
-            <p>"Privacidade absoluta, vista de tirar o fôlego e um atendimento que faz você se sentir realmente especial."</p>
-            <div class="autor">— Juliana P., Brasília</div>
-          </div>
+      </div>
+      <div class="depoimentos-grid">
+        <div class="depoimento">
+          <div class="estrelas">★★★★★</div>
+          <p>"Uma temporada inesquecível. Cada detalhe da mansão era impecável, e o concierge resolveu tudo antes mesmo de pedirmos."</p>
+          <div class="autor">— Fernanda R., São Paulo</div>
         </div>
-      </section>
+        <div class="depoimento">
+          <div class="estrelas">★★★★★</div>
+          <p>"Já alugamos casas de luxo em vários países, e essa curadoria está entre as melhores experiências que já tivemos."</p>
+          <div class="autor">— Marcelo A., Belo Horizonte</div>
+        </div>
+        <div class="depoimento">
+          <div class="estrelas">★★★★★</div>
+          <p>"Privacidade absoluta, vista de tirar o fôlego e um atendimento que faz você se sentir realmente especial."</p>
+          <div class="autor">— Juliana P., Brasília</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <section class="oferta-faq">
-        <div class="cabecalho-secao">
-          <div>
-            <span class="eyebrow">Dúvidas frequentes</span>
-            <h2 class="titulo-secao">Antes de reservar</h2>
-          </div>
+  <section class="secao-alt oferta-faq">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <div>
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2 class="titulo-secao">Antes de reservar</h2>
         </div>
-        <div class="faq-lista">
-          <details class="faq-item">
-            <summary>Como funciona o pagamento?</summary>
-            <p>A taxa de reserva padrão é de R$700, mas pagando via Pix você recebe 30% de desconto automático — o valor final fica em torno de R$500, pago na hora para confirmar a data. O restante é combinado com nosso time e pago até a data do check-in — nunca antes disso.</p>
-          </details>
-          <details class="faq-item">
-            <summary>É seguro reservar por aqui?</summary>
-            <p>Sim. O pagamento é processado via Pix, com conexão criptografada (SSL) em todo o site. Não pedimos nem armazenamos dados de cartão em nenhum momento.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Por que o endereço exato não aparece no site?</summary>
-            <p>Por padrão de privacidade e segurança do proprietário — comum em imóveis de alto padrão. O endereço completo é enviado após a confirmação da reserva.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Posso alterar ou cancelar minha reserva?</summary>
-            <p>Sim, é só falar com a gente pelo WhatsApp o quanto antes. Cada caso é analisado com nosso time de atendimento.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Quando recebo a confirmação da reserva?</summary>
-            <p>Assim que o Pix da taxa de reserva é identificado — geralmente em poucos segundos — a confirmação aparece automaticamente na tela, com o código da sua reserva.</p>
-          </details>
-          <details class="faq-item">
-            <summary>E se a data que eu escolher não puder ser confirmada?</summary>
-            <p>Se por qualquer motivo não conseguirmos confirmar a disponibilidade da data escolhida, devolvemos 100% da taxa de reserva paga.</p>
-          </details>
-        </div>
-      </section>
+      </div>
+      <div class="faq-lista">
+        <details class="faq-item">
+          <summary>Como funciona o pagamento?</summary>
+          <p>A taxa de reserva padrão é de R$700, mas pagando via Pix você recebe 30% de desconto automático — o valor final fica em torno de R$500, pago na hora para confirmar a data. O restante é combinado com nosso time e pago até a data do check-in — nunca antes disso.</p>
+        </details>
+        <details class="faq-item">
+          <summary>É seguro reservar por aqui?</summary>
+          <p>Sim. O pagamento é processado via Pix, com conexão criptografada (SSL) em todo o site. Não pedimos nem armazenamos dados de cartão em nenhum momento.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Por que o endereço exato não aparece no site?</summary>
+          <p>Por padrão de privacidade e segurança dos proprietários — comum em imóveis de alto padrão. O endereço completo é enviado após a confirmação da reserva.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Posso alterar ou cancelar minha reserva?</summary>
+          <p>Sim, é só falar com a gente pelo WhatsApp o quanto antes. Cada caso é analisado com nosso time de atendimento.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Quando recebo a confirmação da reserva?</summary>
+          <p>Assim que o Pix da taxa de reserva é identificado — geralmente em poucos segundos — a confirmação aparece automaticamente na tela, com o código da sua reserva.</p>
+        </details>
+        <details class="faq-item">
+          <summary>E se a data que eu escolher não puder ser confirmada?</summary>
+          <p>Se por qualquer motivo não conseguirmos confirmar a disponibilidade da data escolhida, devolvemos 100% da taxa de reserva paga.</p>
+        </details>
+      </div>
     </div>
   </section>
 
@@ -351,7 +360,7 @@
     </div>
   </div>
 
-  <div class="sticky-cta-mobile" id="sticky-cta">
+  <div class="sticky-cta-mobile oculto" id="sticky-cta">
     <div class="sticky-cta-preco">
       <strong id="sticky-cta-valor"></strong>
       <span>/noite</span>

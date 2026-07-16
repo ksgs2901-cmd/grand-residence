@@ -1,44 +1,49 @@
 (async function () {
-  const MANSAO_ID_OFERTA = 6; // Mansão de alto luxo frente mar na Praia do Forte — 8 suítes, R$2.000/noite
-
   const config = await inicializarComum("oferta");
   const { mansoes } = await carregarDados();
 
-  const mansao = mansoes.find((m) => m.id === MANSAO_ID_OFERTA) || mansoes[0];
+  const disponiveis = mansoes
+    .filter((m) => m.destaqueOferta500)
+    .sort((a, b) => a.precoNoite - b.precoNoite);
 
-  document.title = `Mansão à Beira-Mar — Sinal a partir de R$500 — ${config.nomeMarca}`;
+  document.getElementById("hero-oferta").style.backgroundImage = `url(${disponiveis[0].imagens[0]})`;
+  document.getElementById("resultado-info").textContent =
+    `${disponiveis.length} mansões selecionadas com sinal a partir de R$500`;
 
-  document.getElementById("hero-oferta").style.backgroundImage = `url(${mansao.imagens[0]})`;
-  document.getElementById("oferta-hospedes").textContent = mansao.hospedes;
-
-  document.getElementById("detalhe-cidade").textContent = mansao.cidade;
-  document.getElementById("detalhe-nome").textContent = mansao.nome;
-  document.getElementById("detalhe-quartos").textContent = mansao.quartos;
-  document.getElementById("detalhe-hospedes").textContent = mansao.hospedes;
-  document.getElementById("detalhe-banheiros").textContent = mansao.banheiros;
-  document.getElementById("detalhe-descricao").textContent = mansao.descricao;
-  document.getElementById("detalhe-endereco").textContent = `Endereço: ${mansao.endereco}`;
-  document.getElementById("detalhe-preco").innerHTML = `${formatarPreco(mansao.precoNoite)}<span> /noite</span>`;
-
-  document.getElementById("sticky-cta-valor").textContent = formatarPreco(mansao.precoNoite);
-  document.getElementById("sticky-cta-btn").addEventListener("click", () => {
-    document.querySelector(".card-reserva").scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-
-  document.getElementById("detalhe-comodidades").innerHTML = mansao.comodidades
-    .map((c) => `<li>${c}</li>`)
-    .join("");
-
-  // Galeria
-  const galeria = document.getElementById("galeria");
-  galeria.innerHTML = mansao.imagens
+  const grid = document.getElementById("grid-oferta");
+  grid.innerHTML = disponiveis
     .map(
-      (img, i) =>
-        `<img src="${img}" alt="${mansao.nome} - foto ${i + 1}" data-idx="${i}" class="${i === 0 ? "principal" : ""}" loading="lazy" />`
+      (m) => `
+    <a class="card-mansao" href="#area-reserva" data-id="${m.id}">
+      <div class="imagem">
+        <span class="tag">R$500 de sinal</span>
+        <img src="${m.imagens[0]}" alt="${m.nome}" loading="lazy" />
+      </div>
+      <div class="corpo">
+        <div class="cidade">${m.cidade}</div>
+        <h3>${m.nome}</h3>
+        <div class="specs">
+          <span>${m.quartos} suítes</span>
+          <span>${m.hospedes} hóspedes</span>
+          <span>${m.banheiros} banheiros</span>
+        </div>
+        <div class="rodape">
+          <div class="preco"><strong>${formatarPreco(m.precoNoite)}</strong><span> /noite</span></div>
+          <span class="ver-mais">Reservar esta</span>
+        </div>
+      </div>
+    </a>
+  `
     )
     .join("");
 
-  // Lightbox
+  const areaReserva = document.getElementById("area-reserva");
+  const stickyCta = document.getElementById("sticky-cta");
+
+  let mansao = null;
+
+  // ---------- Galeria + Lightbox ----------
+  const galeria = document.getElementById("galeria");
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
   let idxAtual = 0;
@@ -56,9 +61,6 @@
     lightboxImg.src = mansao.imagens[idxAtual];
   }
 
-  galeria.querySelectorAll("img").forEach((img) => {
-    img.addEventListener("click", () => abrirLightbox(Number(img.dataset.idx)));
-  });
   document.getElementById("lightbox-fechar").addEventListener("click", fecharLightbox);
   document.getElementById("lightbox-anterior").addEventListener("click", () => navegar(-1));
   document.getElementById("lightbox-proxima").addEventListener("click", () => navegar(1));
@@ -388,5 +390,63 @@
     document.getElementById("resumo-preco").hidden = true;
     campo.erroDatas.textContent = "";
     irParaEtapa(1);
+  });
+
+  document.getElementById("sticky-cta-btn").addEventListener("click", () => {
+    document.querySelector(".card-reserva").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  // ---------- Seleção de mansão a partir da grade ----------
+
+  function selecionarMansao(id) {
+    const encontrada = mansoes.find((m) => m.id === id);
+    if (!encontrada) return;
+    mansao = encontrada;
+
+    document.getElementById("detalhe-cidade").textContent = mansao.cidade;
+    document.getElementById("detalhe-nome").textContent = mansao.nome;
+    document.getElementById("detalhe-quartos").textContent = mansao.quartos;
+    document.getElementById("detalhe-hospedes").textContent = mansao.hospedes;
+    document.getElementById("detalhe-banheiros").textContent = mansao.banheiros;
+    document.getElementById("detalhe-descricao").textContent = mansao.descricao;
+    document.getElementById("detalhe-endereco").textContent = `Endereço: ${mansao.endereco}`;
+    document.getElementById("detalhe-preco").innerHTML = `${formatarPreco(mansao.precoNoite)}<span> /noite</span>`;
+    document.getElementById("detalhe-comodidades").innerHTML = mansao.comodidades
+      .map((c) => `<li>${c}</li>`)
+      .join("");
+
+    galeria.innerHTML = mansao.imagens
+      .map(
+        (img, i) =>
+          `<img src="${img}" alt="${mansao.nome} - foto ${i + 1}" data-idx="${i}" class="${i === 0 ? "principal" : ""}" loading="lazy" />`
+      )
+      .join("");
+    galeria.querySelectorAll("img").forEach((img) => {
+      img.addEventListener("click", () => abrirLightbox(Number(img.dataset.idx)));
+    });
+
+    document.getElementById("sticky-cta-valor").textContent = formatarPreco(mansao.precoNoite);
+    stickyCta.classList.remove("oculto");
+
+    document.getElementById("form-reserva").reset();
+    reserva = null;
+    resetarPix();
+    document.getElementById("resumo-preco").hidden = true;
+    campo.erroDatas.textContent = "";
+    irParaEtapa(1);
+
+    grid.querySelectorAll(".card-mansao").forEach((el) => {
+      el.classList.toggle("selecionado", Number(el.dataset.id) === id);
+    });
+
+    areaReserva.hidden = false;
+    areaReserva.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  grid.addEventListener("click", (e) => {
+    const card = e.target.closest(".card-mansao");
+    if (!card) return;
+    e.preventDefault();
+    selecionarMansao(Number(card.dataset.id));
   });
 })();

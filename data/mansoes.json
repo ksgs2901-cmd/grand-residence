@@ -183,7 +183,8 @@
       "img/hansen/mansao-de-alto-luxo-frente-mar-na-praia-do-forte-6.jpg"
     ],
     "destaque": true,
-    "disponivelReveillon": true
+    "disponivelReveillon": true,
+    "destaqueOferta500": true
   },
   {
     "id": 7,
@@ -494,5 +495,172 @@
     ],
     "destaque": false,
     "disponivelReveillon": true
+  },
+  {
+    "id": 17,
+    "nome": "Casa Toninhas Frente-Mar",
+    "cidade": "Ubatuba - SP",
+    "endereco": "Toninhas, Ubatuba - SP (endereço completo sob consulta)",
+    "precoNoite": 2000,
+    "quartos": 5,
+    "hospedes": 18,
+    "banheiros": 5,
+    "descricao": "Casa de praia em Toninhas, Ubatuba, com acesso direto à areia por um deck-praia particular. São 5 suítes (incluindo um amplo mezanino), todas com ar-condicionado split e ventilador de teto, acomodando até 18 hóspedes. Sala ampla e envidraçada, cozinha totalmente equipada, varanda gourmet com churrasqueira e piscina com deck recém-construído completam essa casa perfeita para grupos grandes em família.",
+    "comodidades": [
+      "Ar-condicionado split em todos os quartos",
+      "Ventilador de teto",
+      "Sala de estar envidraçada com lavabo",
+      "Cozinha totalmente equipada",
+      "Varanda gourmet com churrasqueira",
+      "Piscina com deck recém-construído",
+      "Deck-praia com acesso direto à areia",
+      "Ducha externa",
+      "Jardim",
+      "Lavanderia completa",
+      "Estacionamento com portão eletrônico"
+    ],
+    "imagens": [
+      "img/ubatuba/casa-toninhas-frente-mar-1.jpeg",
+      "img/ubatuba/casa-toninhas-frente-mar-2.jpeg",
+      "img/ubatuba/casa-toninhas-frente-mar-3.jpeg",
+      "img/ubatuba/casa-toninhas-frente-mar-4.jpeg",
+      "img/ubatuba/casa-toninhas-frente-mar-5.jpeg"
+    ],
+    "destaque": false,
+    "disponivelReveillon": true,
+    "destaqueOferta500": true
+  },
+  {
+    "id": 18,
+    "nome": "Casa Ilhabela Frente-Mar",
+    "cidade": "Ilhabela - SP",
+    "endereco": "Ilhabela - SP (endereço completo sob consulta)",
+    "precoNoite": 2200,
+    "quartos": 7,
+    "hospedes": 16,
+    "banheiros": 7,
+    "descricao": "Casa charmosa em Ilhabela, construída sobre as pedras à beira-mar, com piscina particular de frente para o mar e acesso a uma pequena enseada. São 7 suítes com ar-condicionado, acomodando até 16 hóspedes — pode ser alugada inteira ou por suíte. Sala de jantar, cozinha totalmente equipada, área de churrasqueira e uma varanda ampla com redes de frente para o mar completam essa propriedade perfeita para grupos grandes em família.",
+    "comodidades": [
+      "Ar-condicionado em todos os quartos",
+      "Piscina particular à beira-mar",
+      "Sala de jantar",
+      "Cozinha totalmente equipada",
+      "Churrasqueira",
+      "Varanda vista mar com redes",
+      "Espreguiçadeiras",
+      "Duchas externas",
+      "Sala de estar com TV",
+      "Aluguel disponível por suíte ou casa inteira",
+      "Deck de madeira com vista para o mar",
+      "Jardim arborizado"
+    ],
+    "imagens": [
+      "img/ilhabela/casa-ilhabela-frente-mar-1.jpeg",
+      "img/ilhabela/casa-ilhabela-frente-mar-2.jpeg",
+      "img/ilhabela/casa-ilhabela-frente-mar-3.jpeg",
+      "img/ilhabela/casa-ilhabela-frente-mar-4.jpeg",
+      "img/ilhabela/casa-ilhabela-frente-mar-5.jpeg",
+      "img/ilhabela/casa-ilhabela-frente-mar-6.jpeg"
+    ],
+    "destaque": false,
+    "disponivelReveillon": true,
+    "destaqueOferta500": true
+  },
+  {
+    "id": 19,
+    "nome": "Casa Paraty Vista da Baía",
+    "cidade": "Paraty - RJ",
+    "endereco": "Paraty - RJ (endereço completo sob consulta)",
+    "precoNoite": 2500,
+    "quartos": 3,
+    "hospedes": 12,
+    "banheiros": 3,
+    "descricao": "Casa de arquitetura moderna em Paraty, cercada por bambuzal e com vista panorâmica para a Baía da Ilha Grande. São 3 suítes com 9 camas ao todo, acomodando até 12 hóspedes. Piscina com deck suspenso sobre a água, ofurô de madeira com vista para o mar, cozinha gourmet integrada à varanda e quadra poliesportiva completam essa propriedade única, perfeita para quem busca design e natureza.",
+    "comodidades": [
+      "3 suítes com 9 camas no total",
+      "Piscina com deck sobre a água",
+      "Ofurô de madeira com vista para o mar",
+      "Cozinha gourmet com churrasqueira",
+      "Sala de estar com vista panorâmica para a baía",
+      "Quadra poliesportiva",
+      "Bambuzal e jardim exuberante",
+      "Deck com espreguiçadeiras de frente para o mar",
+      "Ar-condicionado"
+    ],
+    "imagens": [
+      "img/paraty/casa-paraty-vista-baia-1.jpeg",
+      "img/paraty/casa-paraty-vista-baia-2.jpeg",
+      "img/paraty/casa-paraty-vista-baia-3.jpeg",
+      "img/paraty/casa-paraty-vista-baia-4.jpeg",
+      "img/paraty/casa-paraty-vista-baia-5.jpeg",
+      "img/paraty/casa-paraty-vista-baia-6.jpeg"
+    ],
+    "destaque": false,
+    "disponivelReveillon": true,
+    "destaqueOferta500": true
+  },
+  {
+    "id": 20,
+    "nome": "Duplex Costabella Angra dos Reis",
+    "cidade": "Angra dos Reis - RJ",
+    "endereco": "Condomínio Costabella, Angra dos Reis - RJ (número da unidade sob consulta)",
+    "precoNoite": 1600,
+    "quartos": 3,
+    "hospedes": 8,
+    "banheiros": 3,
+    "descricao": "Duplex no Condomínio Costabella, em Angra dos Reis, com acesso a toda a infraestrutura do resort: piscinas com ilhas e pontes de madeira, praia particular de areia branca e jardins tropicais. O imóvel tem 3 quartos com 6 camas, acomodando até 8 hóspedes, sala de estar decorada com iluminação de LED, cozinha completa e ar-condicionado. Perfeito para famílias e grupos que querem aproveitar toda a estrutura de lazer do condomínio.",
+    "comodidades": [
+      "3 quartos com 6 camas",
+      "Acesso às piscinas do condomínio",
+      "Praia particular de areia branca",
+      "Jardins e lagoas com pontes de madeira",
+      "Sala de estar com TV e iluminação de LED",
+      "Cozinha equipada",
+      "Ar-condicionado",
+      "Área de lazer completa do resort"
+    ],
+    "imagens": [
+      "img/angra/costabella-angra-1.jpeg",
+      "img/angra/costabella-angra-2.jpeg",
+      "img/angra/costabella-angra-3.jpeg",
+      "img/angra/costabella-angra-4.jpeg",
+      "img/angra/costabella-angra-5.jpeg",
+      "img/angra/costabella-angra-6.jpeg"
+    ],
+    "destaque": false,
+    "disponivelReveillon": true,
+    "destaqueOferta500": true
+  },
+  {
+    "id": 21,
+    "nome": "Casa Toque-Toque Grande Vista Mar",
+    "cidade": "São Sebastião - SP",
+    "endereco": "Praia de Toque-Toque Grande, São Sebastião - SP (endereço completo sob consulta)",
+    "precoNoite": 3200,
+    "quartos": 4,
+    "hospedes": 9,
+    "banheiros": 5,
+    "descricao": "Casa de arquitetura contemporânea suspensa sobre a Praia de Toque-Toque Grande, em São Sebastião, com vista deslumbrante para o mar e ilhas da região. Piscina de borda infinita, banheira externa em meio à mata, cozinha gourmet integrada à sala de estar com pé-direito duplo e deck com espreguiçadeiras de frente para a baía. São 4 quartos com 5 camas, acomodando até 9 hóspedes — uma experiência única de design e natureza.",
+    "comodidades": [
+      "Piscina de borda infinita com vista para o mar",
+      "Banheira externa em meio à mata",
+      "Cozinha gourmet integrada",
+      "Sala de estar com pé-direito duplo",
+      "Deck com espreguiçadeiras de frente para a baía",
+      "4 quartos com 5 camas",
+      "Vista para praia e ilhas",
+      "Ar-condicionado"
+    ],
+    "imagens": [
+      "img/toque-toque/casa-toque-toque-1.jpeg",
+      "img/toque-toque/casa-toque-toque-2.jpeg",
+      "img/toque-toque/casa-toque-toque-3.jpeg",
+      "img/toque-toque/casa-toque-toque-4.jpeg",
+      "img/toque-toque/casa-toque-toque-5.jpeg",
+      "img/toque-toque/casa-toque-toque-6.jpeg"
+    ],
+    "destaque": false,
+    "disponivelReveillon": true,
+    "destaqueOferta500": true
   }
 ]

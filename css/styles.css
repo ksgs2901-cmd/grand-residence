@@ -551,6 +551,15 @@ section {
   margin-top: 56px;
 }
 
+.card-mansao.selecionado {
+  border-color: var(--cor-destaque);
+  box-shadow: 0 0 0 2px var(--cor-destaque);
+}
+
+.sticky-cta-mobile.oculto {
+  display: none !important;
+}
+
 /* ---------- Depoimentos ---------- */
 
 .depoimentos-grid {
