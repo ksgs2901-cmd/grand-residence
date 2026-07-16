@@ -77,6 +77,8 @@ Ainda falta:
 - **Preço real nas 10 mansões listadas acima** (item mais urgente).
 - **Checagem de disponibilidade**: o site não sabe se uma data já está reservada por outro hóspede (sem banco de dados por trás). Duas pessoas podem pagar pela mesma data hoje.
 - **Registro da reserva**: quando o Pix é confirmado, o hóspede vê a tela de sucesso, mas isso não é salvo em nenhum lugar (nem e-mail automático é enviado) — você só saberá que a venda aconteceu olhando o extrato/painel da Blackcat.
+
+⚠️ **Compromisso assumido na página de oferta (`oferta.html`)**: o site promete ao hóspede "reembolso garantido se a data não for confirmada". Isso **não é automático** — hoje não existe nenhum sistema que verifica disponibilidade nem processa reembolso sozinho. Se um hóspede pagar por uma data que não pode ser honrada, **você precisa reembolsar manualmente pelo painel da Blackcat**. Como não há checagem de disponibilidade automática (ver item acima), fique de olho nas reservas recebidas para conseguir cumprir essa promessa.
 - **Endereço exato**: hoje mostra "sob consulta" — decida se quer exibir o endereço completo no site ou só depois da reserva confirmada.
 
 ## Como publicar (deixar no ar)
