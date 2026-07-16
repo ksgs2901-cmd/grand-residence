@@ -22,9 +22,53 @@ function linkWhatsapp(config, mensagem) {
   return `https://wa.me/${config.whatsapp}?text=${texto}`;
 }
 
+// Captura utm_source/utm_campaign/etc. (e src/sck da Utmify) da URL e guarda
+// no navegador, pra sobreviver à navegação entre páginas até o pagamento.
+const CHAVES_UTM = ["utm_source", "utm_campaign", "utm_medium", "utm_content", "utm_term", "src", "sck"];
+
+function capturarUtms() {
+  const params = new URLSearchParams(window.location.search);
+  const encontrados = {};
+  let temAlgum = false;
+  CHAVES_UTM.forEach((chave) => {
+    const valor = params.get(chave);
+    if (valor) {
+      encontrados[chave] = valor;
+      temAlgum = true;
+    }
+  });
+  if (temAlgum) {
+    localStorage.setItem("utm_params", JSON.stringify(encontrados));
+  }
+}
+
+function obterUtms() {
+  try {
+    return JSON.parse(localStorage.getItem("utm_params") || "{}");
+  } catch {
+    return {};
+  }
+}
+
 function montarHeader(config, paginaAtiva) {
   const header = document.getElementById("header");
   if (!header) return;
+
+  const nomeMarcaHtml = `${config.nomeMarca.split(" ")[0]} <span>${config.nomeMarca.split(" ").slice(1).join(" ")}</span>`;
+
+  // Página de oferta (landing de anúncio): sem menu, sem link de saída no logo —
+  // foco total na oferta, sem oferecer caminho de volta pro site genérico.
+  if (paginaAtiva === "oferta") {
+    header.innerHTML = `
+      <div class="container">
+        <span class="marca">${nomeMarcaHtml}</span>
+      </div>
+    `;
+    window.addEventListener("scroll", () => {
+      header.classList.toggle("scrolled", window.scrollY > 40);
+    });
+    return;
+  }
 
   const links = [
     { href: "index.html", label: "Início", chave: "inicio" },
@@ -35,7 +79,7 @@ function montarHeader(config, paginaAtiva) {
 
   header.innerHTML = `
     <div class="container">
-      <a href="index.html" class="marca">${config.nomeMarca.split(" ")[0]} <span>${config.nomeMarca.split(" ").slice(1).join(" ")}</span></a>
+      <a href="index.html" class="marca">${nomeMarcaHtml}</a>
       <nav class="nav">
         <ul class="nav-links" id="nav-links">
           ${links
@@ -203,6 +247,7 @@ function mostrarToast(mensagem) {
 }
 
 async function inicializarComum(paginaAtiva) {
+  capturarUtms();
   const { config, mansoes } = await carregarDados();
   document.title = document.title.replace("Grand Residence", config.nomeMarca);
   montarHeader(config, paginaAtiva);

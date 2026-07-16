@@ -1,6 +1,8 @@
 // Função serverless (compatível com Vercel) — consulta o status de uma cobrança PIX na Blackcat.
 // Usada pela página do imóvel para saber quando o pagamento foi confirmado.
 
+const { notificarUtmify, formatarDataUtc } = require("./utmify");
+
 const API_BASE = "https://api.blackcatoficial.com/api";
 
 module.exports = async function handler(req, res) {
@@ -31,6 +33,16 @@ module.exports = async function handler(req, res) {
       return res.status(resp.status >= 400 ? resp.status : 502).json({
         success: false,
         error: (data && data.message) || "Erro ao consultar status",
+      });
+    }
+
+    if (data.data.status === "PAID") {
+      await notificarUtmify({
+        orderId: transactionId,
+        platform: "GrandResidence",
+        paymentMethod: "pix",
+        status: "paid",
+        approvedDate: formatarDataUtc(data.data.paidAt ? new Date(data.data.paidAt) : new Date()),
       });
     }
 

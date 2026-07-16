@@ -1,15 +1,15 @@
 (async function () {
-  const config = await inicializarComum("catalogo");
+  const MANSAO_ID_OFERTA = 6; // Mansão de alto luxo frente mar na Praia do Forte — 8 suítes, R$2.000/noite
+
+  const config = await inicializarComum("oferta");
   const { mansoes } = await carregarDados();
 
-  const params = new URLSearchParams(window.location.search);
-  const id = Number(params.get("id"));
-  const mansao = mansoes.find((m) => m.id === id) || mansoes[0];
+  const mansao = mansoes.find((m) => m.id === MANSAO_ID_OFERTA) || mansoes[0];
 
-  document.title = `${mansao.nome} — ${config.nomeMarca}`;
-  document.getElementById("imovel-cidade").textContent = mansao.cidade;
-  document.getElementById("imovel-nome").textContent = mansao.nome;
-  document.getElementById("imovel-breadcrumb").textContent = mansao.nome;
+  document.title = `Mansão à Beira-Mar — Sinal a partir de R$500 — ${config.nomeMarca}`;
+
+  document.getElementById("hero-oferta").style.backgroundImage = `url(${mansao.imagens[0]})`;
+  document.getElementById("oferta-hospedes").textContent = mansao.hospedes;
 
   document.getElementById("detalhe-cidade").textContent = mansao.cidade;
   document.getElementById("detalhe-nome").textContent = mansao.nome;
@@ -293,10 +293,6 @@
       }
 
       pixTransactionId = data.transactionId;
-      // A Blackcat às vezes retorna o próprio texto EMV em vez de uma imagem base64;
-      // nesse caso, geramos o QR Code visual a partir do texto. Buscamos a imagem via
-      // fetch (em vez de um <img src> direto) para evitar falhas de carregamento
-      // silenciosas em alguns navegadores/extensões.
       const qrRecebido = data.pix.qrCodeBase64;
       if (qrRecebido && qrRecebido.startsWith("data:image")) {
         pixQrImg.src = qrRecebido;
@@ -393,37 +389,4 @@
     campo.erroDatas.textContent = "";
     irParaEtapa(1);
   });
-
-  // Relacionadas: mesma cidade, excluindo a atual
-  const relacionadas = mansoes.filter((m) => m.cidade === mansao.cidade && m.id !== mansao.id).slice(0, 3);
-  const grid = document.getElementById("grid-relacionadas");
-  const fallback = relacionadas.length
-    ? relacionadas
-    : mansoes.filter((m) => m.id !== mansao.id).slice(0, 3);
-
-  grid.innerHTML = fallback
-    .map(
-      (m) => `
-    <a class="card-mansao" href="imovel.html?id=${m.id}">
-      <div class="imagem">
-        ${m.destaque ? '<span class="tag">Destaque</span>' : ""}
-        <img src="${m.imagens[0]}" alt="${m.nome}" loading="lazy" />
-      </div>
-      <div class="corpo">
-        <div class="cidade">${m.cidade}</div>
-        <h3>${m.nome}</h3>
-        <div class="specs">
-          <span>${m.quartos} suítes</span>
-          <span>${m.hospedes} hóspedes</span>
-          <span>${m.banheiros} banheiros</span>
-        </div>
-        <div class="rodape">
-          <div class="preco"><strong>${formatarPreco(m.precoNoite)}</strong><span> /noite</span></div>
-          <span class="ver-mais">Ver detalhes</span>
-        </div>
-      </div>
-    </a>
-  `
-    )
-    .join("");
 })();

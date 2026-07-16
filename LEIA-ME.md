@@ -59,6 +59,18 @@ BLACKCAT_API_KEY=sua_chave_aqui
 ```
 **Nunca cole essa chave em arquivos versionados** — o `.gitignore` já protege `.env.local`.
 
+## Rastreamento de UTM (Utmify)
+
+O site captura `utm_source`, `utm_campaign`, `utm_medium`, `utm_content`, `utm_term` (e `src`/`sck` da própria Utmify) assim que alguém chega em qualquer página, e guarda isso no navegador até a reserva ser concluída — mesmo que a pessoa navegue por várias páginas antes de reservar.
+
+Quando o Pix é **gerado**, o site avisa a Utmify que existe um pedido "aguardando pagamento" (com esses dados de UTM). Quando o Pix é **pago**, o site avisa que o pedido virou "pago". Isso é o que faz o pedido aparecer no painel da Utmify com a campanha/anúncio correto.
+
+Para ativar, adicione no `.env.local`:
+```
+UTMIFY_API_TOKEN=seu_token_aqui
+```
+(Painel da Utmify → Integrações → Webhooks → Credenciais de API). **Sem esse token, o site funciona normalmente** — só não notifica a Utmify.
+
 ## ⚠️ Antes de divulgar o link para hóspedes reais
 
 Ainda falta:

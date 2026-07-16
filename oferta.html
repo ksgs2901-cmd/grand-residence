@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1310960770801497');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1310960770801497&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Utmify UTMs Script -->
+  <script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-xcod-sck
+    data-utmify-prevent-subids
+    async
+    defer
+  ></script>
+  <!-- End Utmify UTMs Script -->
+
+  <!-- Utmify Pixel Code -->
+  <script>
+    window.pixelId = "6a586842eb81dc4d1772d307";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+  <!-- End Utmify Pixel Code -->
+
+  <title>Mansão à Beira-Mar — Sinal a partir de R$500 — Grand Residence</title>
+  <meta name="description" content="Mansão de luxo à beira-mar, 8 suítes, piscina privativa e área gourmet. Reserve com Pix a partir de R$500 de sinal — o menor valor do Brasil." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="tem-sticky-cta">
+  <header class="header" id="header"></header>
+
+  <section class="hero" id="hero-oferta">
+    <div class="container hero-conteudo">
+      <span class="eyebrow">🎉 O menor valor do Brasil · Vagas limitadas</span>
+      <h1>Mansão à beira-mar por <em>R$500 de sinal</em></h1>
+      <p>8 suítes, piscina privativa e área gourmet em Praia do Forte, litoral norte da Bahia. Reserve agora com Pix — o restante só vence no check-in.</p>
+      <div class="hero-acoes">
+        <a href="#reserva-oferta" class="btn btn-primario">Reservar Agora — R$500</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>8</strong><span>Suítes</span></div>
+        <div><strong id="oferta-hospedes">16</strong><span>Hóspedes</span></div>
+        <div><strong>R$500</strong><span>Sinal via Pix</span></div>
+        <div><strong>100%</strong><span>Reserva online</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top: 40px;">
+    <div class="container">
+      <div class="galeria" id="galeria"></div>
+
+      <div class="detalhe-layout">
+        <div class="detalhe-info">
+          <div class="cidade-tag" id="detalhe-cidade"></div>
+          <h1 id="detalhe-nome"></h1>
+
+          <div class="specs-detalhe">
+            <div><strong id="detalhe-quartos"></strong><span>Suítes</span></div>
+            <div><strong id="detalhe-hospedes"></strong><span>Hóspedes</span></div>
+            <div><strong id="detalhe-banheiros"></strong><span>Banheiros</span></div>
+          </div>
+
+          <h2>Sobre a propriedade</h2>
+          <p class="descricao" id="detalhe-descricao"></p>
+          <p class="descricao" style="margin-top: 14px; font-size: 0.85rem;" id="detalhe-endereco"></p>
+
+          <h2>Comodidades</h2>
+          <ul class="lista-comodidades" id="detalhe-comodidades"></ul>
+        </div>
+
+        <aside class="card-reserva" id="reserva-oferta">
+          <div class="reserva-passos" id="reserva-passos">
+            <span class="passo ativo" data-passo="1">1. Datas</span>
+            <span class="passo" data-passo="2">2. Seus dados</span>
+            <span class="passo" data-passo="3">3. Confirmação</span>
+            <span class="passo" data-passo="4">4. Pagamento</span>
+          </div>
+
+          <div class="reserva-passos-mobile" id="reserva-passos-mobile">
+            <span id="passo-mobile-texto">Etapa 1 de 4 · Datas</span>
+            <div class="progresso-mobile" id="progresso-mobile">
+              <span data-passo="1"></span>
+              <span data-passo="2"></span>
+              <span data-passo="3"></span>
+              <span data-passo="4"></span>
+            </div>
+          </div>
+
+          <div class="preco-noite" id="detalhe-preco"></div>
+          <span style="font-size: 0.8rem; color: var(--cor-texto-fraca);">valor de referência por noite</span>
+
+          <form id="form-reserva" novalidate>
+
+            <div class="etapa-reserva" id="etapa-1">
+              <div class="linha-dupla">
+                <div class="campo-filtro pequeno">
+                  <label for="r-checkin">Check-in</label>
+                  <input type="date" id="r-checkin" required />
+                </div>
+                <div class="campo-filtro pequeno">
+                  <label for="r-checkout">Check-out</label>
+                  <input type="date" id="r-checkout" required />
+                </div>
+              </div>
+              <div class="campo-filtro pequeno">
+                <label for="r-hospedes">Número de hóspedes</label>
+                <input type="number" id="r-hospedes" min="1" value="2" required />
+              </div>
+              <p class="erro-reserva" id="erro-datas"></p>
+
+              <div class="resumo-preco" id="resumo-preco" hidden></div>
+
+              <button type="button" class="btn btn-primario btn-bloco" id="btn-ir-etapa-2">Continuar</button>
+            </div>
+
+            <div class="etapa-reserva" id="etapa-2" hidden>
+              <div class="resumo-preco" id="resumo-preco-2"></div>
+              <div class="campo-filtro pequeno">
+                <label for="r-nome">Nome completo</label>
+                <input type="text" id="r-nome" placeholder="Seu nome completo" required />
+              </div>
+              <div class="campo-filtro pequeno">
+                <label for="r-email">E-mail</label>
+                <input type="email" id="r-email" placeholder="voce@email.com" required />
+              </div>
+              <div class="campo-filtro pequeno">
+                <label for="r-telefone">Telefone</label>
+                <input type="tel" id="r-telefone" placeholder="(00) 00000-0000" required />
+              </div>
+              <div class="campo-filtro pequeno">
+                <label for="r-cpf">CPF</label>
+                <input type="text" id="r-cpf" placeholder="000.000.000-00" inputmode="numeric" maxlength="14" required />
+              </div>
+              <div class="linha-dupla">
+                <button type="button" class="btn btn-secundario btn-bloco" id="btn-voltar-etapa-1">Voltar</button>
+                <button type="button" class="btn btn-primario btn-bloco" id="btn-ir-etapa-3">Continuar</button>
+              </div>
+            </div>
+
+            <div class="etapa-reserva" id="etapa-3" hidden>
+              <div class="revisao-reserva">
+                <h3>Confirme os dados da sua reserva</h3>
+
+                <div class="revisao-linha">
+                  <span>Mansão</span>
+                  <strong id="revisao-mansao"></strong>
+                </div>
+                <div class="revisao-linha">
+                  <span>Check-in</span>
+                  <strong id="revisao-checkin"></strong>
+                </div>
+                <div class="revisao-linha">
+                  <span>Check-out</span>
+                  <strong id="revisao-checkout"></strong>
+                </div>
+                <div class="revisao-linha">
+                  <span>Hóspedes</span>
+                  <strong id="revisao-hospedes"></strong>
+                </div>
+                <div class="revisao-linha">
+                  <span>Reserva em nome de</span>
+                  <strong id="revisao-nome"></strong>
+                </div>
+
+                <div class="resumo-preco" id="resumo-preco-3"></div>
+
+                <div class="aviso-restante" id="aviso-restante"></div>
+              </div>
+
+              <button type="button" class="btn btn-primario btn-bloco" id="btn-ir-etapa-4">Confirmar e pagar com Pix</button>
+              <button type="button" class="btn btn-secundario btn-bloco" id="btn-voltar-etapa-2">Voltar</button>
+            </div>
+
+            <div class="etapa-reserva" id="etapa-4" hidden>
+              <div class="resumo-preco" id="resumo-preco-4"></div>
+
+              <div id="campos-pix">
+                <div class="pix-caixa">
+                  <p class="pix-carregando" id="pix-carregando">Gerando cobrança Pix...</p>
+                  <img class="pix-qr" id="pix-qr-img" aria-hidden="true" hidden />
+                  <p class="pix-instrucao" id="pix-instrucao" hidden>Escaneie o QR Code com o app do seu banco ou copie o código Pix abaixo.</p>
+                  <div class="pix-codigo" id="pix-codigo-caixa" hidden>
+                    <span id="pix-codigo-texto"></span>
+                    <button type="button" class="btn btn-secundario" id="btn-copiar-pix">Copiar</button>
+                  </div>
+                  <p class="pix-status" id="pix-status-texto"></p>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-secundario btn-bloco" id="btn-voltar-etapa-3">Voltar</button>
+            </div>
+
+            <div class="etapa-reserva" id="etapa-confirmacao" hidden>
+              <div class="confirmacao">
+                <span class="confirmacao-icone">&#10003;</span>
+                <h3>Reserva confirmada!</h3>
+                <p class="confirmacao-codigo" id="confirmacao-codigo"></p>
+                <div class="resumo-preco" id="resumo-preco-final"></div>
+                <p class="confirmacao-detalhe" id="confirmacao-metodo"></p>
+                <p class="confirmacao-detalhe" id="confirmacao-restante-info"></p>
+                <p class="confirmacao-detalhe">Enviamos os detalhes para <strong id="confirmacao-email"></strong>.</p>
+                <button type="button" class="btn btn-secundario btn-bloco" id="btn-nova-reserva">Fazer outra reserva</button>
+              </div>
+            </div>
+
+          </form>
+          <p class="aviso">Pagamento via Pix, com confirmação automática e instantânea. Você paga apenas a taxa de reserva agora — o restante só é cobrado até a data do check-in.</p>
+
+          <div class="selos-seguranca">
+            <div class="selo"><span class="selo-icone">🔒</span><span>Pagamento 100% seguro</span></div>
+            <div class="selo"><span class="selo-icone">🔐</span><span>Conexão criptografada (SSL)</span></div>
+            <div class="selo"><span class="selo-icone">⚡</span><span>Confirmação automática via Pix</span></div>
+          </div>
+        </aside>
+      </div>
+
+      <section class="oferta-depoimentos">
+        <div class="cabecalho-secao">
+          <div>
+            <span class="eyebrow">Quem já viveu a experiência</span>
+            <h2 class="titulo-secao">Palavras de nossos hóspedes</h2>
+          </div>
+        </div>
+        <div class="depoimentos-grid">
+          <div class="depoimento">
+            <div class="estrelas">★★★★★</div>
+            <p>"Uma temporada inesquecível. Cada detalhe da mansão era impecável, e o concierge resolveu tudo antes mesmo de pedirmos."</p>
+            <div class="autor">— Fernanda R., São Paulo</div>
+          </div>
+          <div class="depoimento">
+            <div class="estrelas">★★★★★</div>
+            <p>"Já alugamos casas de luxo em vários países, e essa curadoria está entre as melhores experiências que já tivemos."</p>
+            <div class="autor">— Marcelo A., Belo Horizonte</div>
+          </div>
+          <div class="depoimento">
+            <div class="estrelas">★★★★★</div>
+            <p>"Privacidade absoluta, vista de tirar o fôlego e um atendimento que faz você se sentir realmente especial."</p>
+            <div class="autor">— Juliana P., Brasília</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="oferta-faq">
+        <div class="cabecalho-secao">
+          <div>
+            <span class="eyebrow">Dúvidas frequentes</span>
+            <h2 class="titulo-secao">Antes de reservar</h2>
+          </div>
+        </div>
+        <div class="faq-lista">
+          <details class="faq-item">
+            <summary>Como funciona o pagamento?</summary>
+            <p>Você paga uma taxa de reserva via Pix (com 30% de desconto) para confirmar a data na hora. O restante do valor é combinado com nosso time e pago até a data do check-in — nunca antes disso.</p>
+          </details>
+          <details class="faq-item">
+            <summary>É seguro reservar por aqui?</summary>
+            <p>Sim. O pagamento é processado via Pix, com conexão criptografada (SSL) em todo o site. Não pedimos nem armazenamos dados de cartão em nenhum momento.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Por que o endereço exato não aparece no site?</summary>
+            <p>Por padrão de privacidade e segurança do proprietário — comum em imóveis de alto padrão. O endereço completo é enviado após a confirmação da reserva.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Posso alterar ou cancelar minha reserva?</summary>
+            <p>Sim, é só falar com a gente pelo WhatsApp o quanto antes. Cada caso é analisado com nosso time de atendimento.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Quando recebo a confirmação da reserva?</summary>
+            <p>Assim que o Pix da taxa de reserva é identificado — geralmente em poucos segundos — a confirmação aparece automaticamente na tela, com o código da sua reserva.</p>
+          </details>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer"></footer>
+  <a class="whatsapp-flutuante" id="whatsapp-flutuante" href="#"></a>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-fechar" id="lightbox-fechar">&times;</button>
+    <img id="lightbox-img" src="" alt="" />
+    <div class="lightbox-nav">
+      <button id="lightbox-anterior">&larr; Anterior</button>
+      <button id="lightbox-proxima">Próxima &rarr;</button>
+    </div>
+  </div>
+
+  <div class="sticky-cta-mobile" id="sticky-cta">
+    <div class="sticky-cta-preco">
+      <strong id="sticky-cta-valor"></strong>
+      <span>/noite</span>
+    </div>
+    <button type="button" class="btn btn-primario" id="sticky-cta-btn">Reservar Agora</button>
+  </div>
+
+  <script src="js/comum.js"></script>
+  <script src="js/oferta.js"></script>
+</body>
+</html>

@@ -4,6 +4,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const { notificarUtmify, formatarDataUtc } = require("./utmify");
 
 const API_BASE = "https://api.blackcatoficial.com/api";
 
@@ -41,6 +42,7 @@ module.exports = async function handler(req, res) {
   const body = req.body || {};
   const { mansaoId, checkin, checkout, hospedes } = body;
   const customer = body.customer || {};
+  const utms = body.utms || {};
 
   let mansoes, config;
   try {
@@ -124,6 +126,47 @@ module.exports = async function handler(req, res) {
         error: (data && data.message) || "Erro ao gerar cobrança Pix",
       });
     }
+
+    const ip = String(req.headers["x-forwarded-for"] || req.socket.remoteAddress || "").split(",")[0].trim();
+
+    await notificarUtmify({
+      orderId: data.data.transactionId,
+      platform: "GrandResidence",
+      paymentMethod: "pix",
+      status: "waiting_payment",
+      createdAt: formatarDataUtc(new Date()),
+      approvedDate: null,
+      customer: {
+        name: String(customer.name).slice(0, 120),
+        email: String(customer.email).slice(0, 160),
+        phone: apenasDigitos(customer.phone),
+        document: documento,
+        country: "BR",
+        ip: ip || undefined,
+      },
+      products: [
+        {
+          id: String(mansao.id),
+          name: mansao.nome,
+          quantity: 1,
+          priceInCents: valorEmCentavos,
+        },
+      ],
+      trackingParameters: {
+        utm_source: utms.utm_source || null,
+        utm_campaign: utms.utm_campaign || null,
+        utm_medium: utms.utm_medium || null,
+        utm_content: utms.utm_content || null,
+        utm_term: utms.utm_term || null,
+        src: utms.src || null,
+        sck: utms.sck || null,
+      },
+      commission: {
+        totalPriceInCents: valorEmCentavos,
+        gatewayFeeInCents: 0,
+        userCommissionInCents: valorEmCentavos,
+      },
+    });
 
     return res.status(200).json({
       success: true,
