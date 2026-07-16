@@ -53,19 +53,132 @@
 <body>
   <header class="header" id="header"></header>
 
-  <section class="pagina-hero">
-    <div class="container">
-      <span class="eyebrow">🎉 Vagas limitadas · Fim de ano</span>
-      <h1 class="titulo-secao">Mansões disponíveis para o Réveillon</h1>
-      <p class="subtitulo-secao" style="margin-top: 14px;">Selecionamos <strong id="total-reveillon">16</strong> mansões com disponibilidade confirmada para a virada do ano. A procura é alta nessa época — reserve sua data com Pix, sem sair do site.</p>
-      <p class="breadcrumb"><a href="index.html">Início</a> / Réveillon</p>
+  <section class="hero" id="hero-reveillon">
+    <div class="container hero-conteudo">
+      <span class="eyebrow">🎉 Vagas limitadas · Réveillon 2026</span>
+      <h1>Mansões pé na areia para o <em>Réveillon 2026</em></h1>
+      <p>Garanta sua data com apenas R$500 de sinal — pague o restante só no check-in. Reserve com Pix, sem sair do site.</p>
+      <ul class="lista-check">
+        <li>✔ Casas de alto padrão</li>
+        <li>✔ Atendimento via WhatsApp</li>
+        <li>✔ Datas limitadas</li>
+      </ul>
+      <div class="hero-acoes">
+        <a href="#mansoes-reveillon" class="btn btn-primario">Reservar Agora</a>
+      </div>
     </div>
   </section>
 
-  <section>
+  <div class="selos-seguranca selos-faixa">
+    <div class="selo"><span class="selo-icone">🔒</span><span>Pagamento 100% seguro</span></div>
+    <div class="selo"><span class="selo-icone">🔐</span><span>Conexão criptografada (SSL)</span></div>
+    <div class="selo"><span class="selo-icone">⚡</span><span>Confirmação automática via Pix</span></div>
+    <div class="selo"><span class="selo-icone">↩️</span><span>Reembolso garantido se a data não for confirmada</span></div>
+  </div>
+
+  <section id="mansoes-reveillon">
     <div class="container">
+      <div class="cabecalho-secao">
+        <div>
+          <span class="eyebrow">Coleção Réveillon</span>
+          <h2 class="titulo-secao">Selecionamos <span id="total-reveillon">16</span> mansões com disponibilidade confirmada</h2>
+        </div>
+      </div>
       <p class="resultado-info" id="resultado-info"></p>
       <div class="grid-mansoes" id="grid-reveillon"></div>
+    </div>
+  </section>
+
+  <section class="secao-alt" id="como-funciona">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <div>
+          <span class="eyebrow">Simples assim</span>
+          <h2 class="titulo-secao">Como funciona a reserva em 3 passos</h2>
+        </div>
+      </div>
+      <div class="passos-grid">
+        <div class="passo-explicativo">
+          <span class="passo-numero">1</span>
+          <h3>Escolha a mansão e as datas</h3>
+          <p>Veja fotos, comodidades e escolha check-in e check-out direto no site — sem precisar ligar pra ninguém.</p>
+        </div>
+        <div class="passo-explicativo">
+          <span class="passo-numero">2</span>
+          <h3>Pague o sinal com Pix</h3>
+          <p>Apenas R$500 pra confirmar sua data agora. O restante só é cobrado até a data do check-in.</p>
+        </div>
+        <div class="passo-explicativo">
+          <span class="passo-numero">3</span>
+          <h3>Reserva confirmada na hora</h3>
+          <p>Assim que o Pix cai, a confirmação aparece automaticamente — nosso time entra em contato para enviar o contrato.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reveillon-depoimentos">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <div>
+          <span class="eyebrow">Quem já viveu a experiência</span>
+          <h2 class="titulo-secao">Palavras de nossos hóspedes</h2>
+        </div>
+      </div>
+      <div class="depoimentos-grid">
+        <div class="depoimento">
+          <div class="estrelas">★★★★★</div>
+          <p>"Uma temporada inesquecível. Cada detalhe da mansão era impecável, e o concierge resolveu tudo antes mesmo de pedirmos."</p>
+          <div class="autor">— Fernanda R., São Paulo</div>
+        </div>
+        <div class="depoimento">
+          <div class="estrelas">★★★★★</div>
+          <p>"Já alugamos casas de luxo em vários países, e essa curadoria está entre as melhores experiências que já tivemos."</p>
+          <div class="autor">— Marcelo A., Belo Horizonte</div>
+        </div>
+        <div class="depoimento">
+          <div class="estrelas">★★★★★</div>
+          <p>"Privacidade absoluta, vista de tirar o fôlego e um atendimento que faz você se sentir realmente especial."</p>
+          <div class="autor">— Juliana P., Brasília</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao-alt oferta-faq">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <div>
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2 class="titulo-secao">Antes de reservar</h2>
+        </div>
+      </div>
+      <div class="faq-lista">
+        <details class="faq-item">
+          <summary>Como funciona o pagamento?</summary>
+          <p>A taxa de reserva padrão é de R$700, mas pagando via Pix você recebe 30% de desconto automático — o valor final fica em torno de R$500, pago na hora para confirmar a data. O restante é combinado com nosso time e pago até a data do check-in — nunca antes disso.</p>
+        </details>
+        <details class="faq-item">
+          <summary>É seguro reservar por aqui?</summary>
+          <p>Sim. O pagamento é processado via Pix, com conexão criptografada (SSL) em todo o site. Não pedimos nem armazenamos dados de cartão em nenhum momento.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Por que o endereço exato não aparece no site?</summary>
+          <p>Por padrão de privacidade e segurança dos proprietários — comum em imóveis de alto padrão. O endereço completo é enviado após a confirmação da reserva.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Posso alterar ou cancelar minha reserva?</summary>
+          <p>Sim, é só falar com a gente pelo WhatsApp o quanto antes. Cada caso é analisado com nosso time de atendimento.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Quando recebo a confirmação da reserva?</summary>
+          <p>Assim que o Pix da taxa de reserva é identificado — geralmente em poucos segundos — a confirmação aparece automaticamente na tela, com o código da sua reserva.</p>
+        </details>
+        <details class="faq-item">
+          <summary>E se a data que eu escolher não puder ser confirmada?</summary>
+          <p>Se por qualquer motivo não conseguirmos confirmar a disponibilidade da data escolhida, devolvemos 100% da taxa de reserva paga.</p>
+        </details>
+      </div>
     </div>
   </section>
 

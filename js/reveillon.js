@@ -6,6 +6,7 @@
     .filter((m) => m.disponivelReveillon)
     .sort((a, b) => a.precoNoite - b.precoNoite);
 
+  document.getElementById("hero-reveillon").style.backgroundImage = `url(${disponiveis[0].imagens[0]})`;
   document.getElementById("total-reveillon").textContent = disponiveis.length;
   document.getElementById("resultado-info").textContent =
     `${disponiveis.length} mansões com disponibilidade confirmada para o Réveillon`;
