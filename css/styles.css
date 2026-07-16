@@ -304,6 +304,12 @@ h2.titulo-secao {
   flex-wrap: wrap;
 }
 
+.aviso-urgencia {
+  margin-top: 16px;
+  font-size: 0.85rem;
+  color: var(--cor-destaque);
+}
+
 .lista-check {
   display: flex;
   flex-wrap: wrap;
